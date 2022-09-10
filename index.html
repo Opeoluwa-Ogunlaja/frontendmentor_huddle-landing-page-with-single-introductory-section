@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+</head>
+<body class="w-full relative isolate before:absolute before:inset-0 before:-z-10">
+  <h1 class="sr-only">Huddle Site</h1>
+  <header class="mb-auto sm:mb-8">
+    <div class="logo">
+      <img class="logo-image" src="./images/logo.svg" alt="logo">
+    </div>
+  </header>
+
+  <div class="container justify-center items-center w-full sm:justify-start text-center sm:text-left mx-auto sm:items-start flex flex-row">
+    <div class="site-image__container w-full">
+      <div class="site-image origin-top-left w-full">
+        <img class="w-full" src="./images/illustration-mockups.svg" alt="presentation">
+      </div>
+    </div>
+    <div class="site-description px-12 space-y-3 py-10 text-center sm:text-left text-white">
+      <h2 class="site-desctiption__title poppins-bold">
+        Build The Community <br> Your Fans Will Love
+      </h2>
+      <p class="site-desctiption__text max-w-[45ch] sm:max-w-max">
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion. 
+      </p>
+      <div class="cta-btn__container">
+        <button class="cta-btn py-2 sm:py-4 text-lg sans px-16 sm:px-20 rounded-full drop-shadow-md hover:drop-shadow-xl">
+          Register
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="socials__container flex justify-center sm:absolute right-[5rem] bottom-10 sm:mr-20 text-white">
+    <ul class="socials flex gap-x-3">
+      <li class="social-icon rounded-full border-2">
+          <span class="social-icon__icon fab fa-facebook"></span>
+      </li>
+      <li class="social-icon rounded-full border-2">
+        <span class="social-icon__icon fab fa-twitter"></span>
+      </li>
+      <li class="social-icon rounded-full border-2">
+        <span class="social-icon__icon fab fa-instagram"></span>
+      </li>
+    </ul>
+  </div>
+
+  <footer class="absolute mx-auto w-max bottom-auto sm:bottom-0 inset-x-0">
+    <p class="attribution text-center text-sm">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-red-200 text-xs" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#" class="text-amber-300 text-xs">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "frontendmentor_huddle-landing-page-with-single-introductory-section",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "watch-scss": "sass ./sass/style.scss ./index.css --watch",
+    "watch": "parcel",
+    "watch-tailwind": "npx tailwindcss -i ./src/style.css -o ./style.css --watch",
+    "tailwind": "npx tailwindcss -i ./src/style.css -o ./style.css",
+    "sass": "sass ./sass/style.scss ./index.css",
+    "parcel-build": "parcel build",
+    "start": "concurrently  \"npm run watch-scss\" \"npm run watch-tailwind\" \"parcel\"",
+    "build": "concurrently \"npm run sass\" \"npm run tailwind\" \"npm run parcel-build\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
